@@ -1,0 +1,35 @@
+.homepage-main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #181f2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.homepage-banner {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.5);
+  position: absolute;
+  z-index: 0;
+}
+.homepage-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: left;
+  max-width: 800px;
+  margin-left: 5vw;
+}
+.homepage-overlay .accent {
+  color: #14b7ff;
+  font-weight: 600;
+}
+.author {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #61dafb;
+}

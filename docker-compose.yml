@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: wagon
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15673:15672"
+
+  backend:
+    build:
+      context: ./Zernovoz-1
+    ports:
+      - "8090:8090"
+    depends_on:
+      - postgres
+      - rabbitmq
+
+  detector:
+    build:
+      context: ./rail_v2
+    ports: 
+      - "8080:8080"
+    depends_on:
+      - rabbitmq
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

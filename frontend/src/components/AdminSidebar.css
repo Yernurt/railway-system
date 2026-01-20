@@ -1,0 +1,27 @@
+.admin-sidebar {
+  width: 220px;
+  background-color: #253144;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.admin-sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  color: #10b981;
+  font-weight: bold;
+}

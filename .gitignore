@@ -1,0 +1,23 @@
+# IDE
+.idea/
+.vscode/
+
+# Node
+node_modules/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+runs/
+logs.txt
+
+# ML
+*.pt
+*.onnx
+
+# Java
+target/
+
+# Env
+.env

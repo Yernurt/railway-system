@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Wagon-number']
+
+roboflow:
+  workspace: irkutsk-national-research-technical-university-oxqbl
+  project: wagon-number-detection-otgoe
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/irkutsk-national-research-technical-university-oxqbl/wagon-number-detection-otgoe/dataset/3

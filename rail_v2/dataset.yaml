@@ -1,0 +1,5 @@
+path: C:/Users/yeroha/PycharmProjects/rail_v2/dataset  # Датасет папкасы
+train: images/train  # Жаттықтыру деректері
+val: images/val  # Валидация деректері
+nc: 1  # Кластар саны (тек вагон нөмірі)
+names: ["wagon_number"]  # Кластың атауы

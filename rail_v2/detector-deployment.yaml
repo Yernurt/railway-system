@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: detector-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: detector
+  template:
+    metadata:
+      labels:
+        app: detector
+    spec:
+      containers:
+        - name: detector
+          image: yerom2003/rail-system-detector:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+

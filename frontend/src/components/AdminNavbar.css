@@ -1,0 +1,41 @@
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background: #222b3a;
+  color: #fff;
+  min-width: 0;
+  /* немесе width: 100%; */
+  overflow-x: auto;
+}
+
+.navbar-left {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.user-info {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.login-btn, .logout-btn {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
+}
